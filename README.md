@@ -36,7 +36,7 @@ TD Filename
 
 ## 💡 Purpose
 
-- **This repository is created to:**
+**This repository is created to:**
 - Help others learn Assembly
 - Track my Assembly learning journey
 
