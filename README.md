@@ -7,7 +7,9 @@
 
 - ✅ Baisc arithmatic operations
 - ✅ BCD arithmatic operations
-- ⏳ Coming soon: String related programs,Array operations,etc.
+- ✅ Procedure and Macro operations
+- ✅ Array operations
+- ⏳ Coming soon: String related programs,etc.
 
 ## 🚀 How to Clone and Run
 
