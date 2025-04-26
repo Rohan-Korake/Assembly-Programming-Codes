@@ -5,11 +5,12 @@
 
 ## 📂 What's Inside?
 
-- ✅ Baisc arithmatic operations
-- ✅ BCD arithmatic operations
-- ✅ Procedure and Macro operations
-- ✅ Array operations
-- ⏳ Coming soon: String related programs,etc.
+- ✅ Baisc arithmatic operations.
+- ✅ BCD arithmatic operations.
+- ✅ Procedure and Macro operations.
+- ✅ Array operations.
+- ✅ String operations.
+- ✅ Single number operations.
 
 ## 🚀 How to Clone and Run
 
