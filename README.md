@@ -6,6 +6,7 @@
 ## 📂 What's Inside?
 
 - ✅ Baisc arithmatic operations
+- ✅ BCD arithmatic operations
 - ⏳ Coming soon: String related programs,Array operations,etc.
 
 ## 🚀 How to Clone and Run
