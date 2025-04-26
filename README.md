@@ -5,8 +5,8 @@
 
 ## 📂 What's Inside?
 
-- ✅ Baisc arithmatic operations.
-- ✅ BCD arithmatic operations.
+- ✅ Basic arithmetic operations.
+- ✅ BCD arithmetic operations.
 - ✅ Procedure and Macro operations.
 - ✅ Array operations.
 - ✅ String operations.
