@@ -1,0 +1,36 @@
+DATA SEGMENT
+Array DW 0040H, 0020H, 0070H, 0010H, 0060H
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE, DS:DATA
+START:
+    MOV AX, DATA
+    MOV DS, AX
+    MOV CL, 05H
+
+LOOP1: 
+    LEA SI, Array
+    MOV CH, 04H
+
+LOOP2: 
+    MOV AX, [SI]
+    ADD SI, 2
+    CMP AX, [SI]
+    JC DOWN
+    MOV DX, [SI]
+    MOV [SI], AX
+    SUB SI, 2
+    MOV [SI], DX
+    ADD SI, 2
+
+DOWN: 
+    DEC CH
+    JNZ LOOP2
+    DEC CL
+    JNZ LOOP1
+
+    MOV AH, 4CH
+    INT 21H
+CODE ENDS
+END START
