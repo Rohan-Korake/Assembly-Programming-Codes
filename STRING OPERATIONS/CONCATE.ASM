@@ -33,6 +33,7 @@
     MOV BYTE PTR [DI],'$'
     MOV AH,09H
     MOV DX,OFFSET FINAL
+    INT 21H
     MOV AH,4CH
     INT 21H
     CODE ENDS
