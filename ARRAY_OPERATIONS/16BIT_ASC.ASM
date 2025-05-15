@@ -15,16 +15,14 @@ LOOP1:
 
 LOOP2: 
     MOV AX, [SI]
-    ADD SI, 2
-    CMP AX, [SI]
-    JC DOWN
-    MOV DX, [SI]
-    MOV [SI], AX
-    SUB SI, 2
-    MOV [SI], DX
-    ADD SI, 2
+    MOV BX,[SI+2]
+    CMP AX, BX
+    JBE SKIP
+    MOV [SI], BX
+    MOV [SI+2], AX
 
-DOWN: 
+SKIP:
+    INC SI
     DEC CH
     JNZ LOOP2
     DEC CL
