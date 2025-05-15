@@ -1,5 +1,5 @@
 DATA SEGMENT
-Array DW 0040H, 0020H, 0070H, 0010H, 0060H
+Array DB 40H, 20H, 70H, 10H, 60H
 DATA ENDS
 
 CODE SEGMENT
@@ -15,16 +15,14 @@ LOOP1:
 
 LOOP2: 
     MOV AX, [SI]
-    ADD SI, 2
-    CMP AX, [SI]
-    JNC DOWN
-    MOV DX, [SI]
-    MOV [SI], AX
-    SUB SI, 2
-    MOV [SI], DX
-    ADD SI, 2
+    MOV BX, [SI+1]
+    CMP AX, BX
+    JAE SKIP
+    MOV [SI], BX
+    MOV [SI+1], AX
 
-DOWN: 
+SKIP: 
+    INC SI
     DEC CH
     JNZ LOOP2
     DEC CL
